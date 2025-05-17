@@ -12,8 +12,8 @@ def display_line_chart(df,kpi):
     if kpi == 'Yield Trend':
         y=df['yield']
         y_label='%'
-    elif kpi == 'Speed Trend':
-        y=df['speed']
+    elif kpi == 'Output Trend':
+        y=df['output']
         y_label='units'
         
     fig = px.line(df,
@@ -55,8 +55,8 @@ def display_area_chart(df,kpi):
     if kpi == 'Yield Trend':
         y=df['yield']
         y_label='%'
-    elif kpi == 'Speed Trend':
-        y=df['speed']
+    elif kpi == 'Output Trend':
+        y=df['output']
         y_label='units'
         
     fig = px.area(df,

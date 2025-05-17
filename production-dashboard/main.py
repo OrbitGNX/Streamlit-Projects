@@ -122,7 +122,7 @@ with tab[0]: # KPI
         
     with chart[1]: # Output Trend
         with st.container(border=True):
-            ucharts.display_line_chart(active_mode_df,'Speed Trend')
+            ucharts.display_line_chart(speed_df,'Output Trend')
             with st.expander('see dataframe'):
                 st.dataframe(speed_df[['time_stamp','output']])
     
@@ -166,7 +166,7 @@ with tab[1]: # Other Metrics
     
     with chart[1]: # Output Trend
         with st.container(border=True):
-            ucharts.display_area_chart(active_mode_df,'Speed Trend')
+            ucharts.display_area_chart(speed_df,'Output Trend')
             with st.expander('see dataframe'):
                 st.dataframe(speed_df[['time_stamp','output']])
     
