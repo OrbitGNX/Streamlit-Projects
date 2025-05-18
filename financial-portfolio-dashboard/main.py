@@ -17,8 +17,8 @@ import ucharts
 st.set_page_config(page_title='Financial Portfolio',layout='wide')
 
 with st.sidebar:
-    st.logo(image='image\gyronix-with-text.png',
-        icon_image='image\gyronix-logo.png')
+    st.logo(image='financial-portfolio-dashboard/image/gyronix-with-text.png',
+        icon_image='financial-portfolio-dashboard/image/gyronix-logo.png')
     
     st.title('📊Financial Portfolio')
     
