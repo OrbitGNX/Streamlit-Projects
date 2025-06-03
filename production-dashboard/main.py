@@ -18,7 +18,7 @@ tab = st.tabs(['KPI','Other Metrics'])
 # dataset
 @st.cache_data
 def load_data():
-    raw = pd.read_csv(r"production-dashboard\dataset\manufacturing_dataset.csv")
+    raw = pd.read_csv(r"production-dashboard/dataset/manufacturing_dataset.csv")
     raw['time_stamp'] = pd.to_datetime(raw['time_stamp'])
     return raw
 
