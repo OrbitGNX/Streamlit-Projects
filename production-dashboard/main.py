@@ -18,7 +18,7 @@ tab = st.tabs(['KPI','Other Metrics'])
 # dataset
 @st.cache_data
 def load_data():
-    raw = pd.read_csv(r"dataset\manufacturing_dataset.csv")
+    raw = pd.read_csv(r"production-dashboard\dataset\manufacturing_dataset.csv")
     raw['time_stamp'] = pd.to_datetime(raw['time_stamp'])
     return raw
 
@@ -26,8 +26,8 @@ def load_data():
 df = load_data()
 
 # side bar
-st.logo(image="image/streamlit-logo-primary-colormark-lighttext.png", 
-        icon_image="image/streamlit-mark-color.png")
+st.logo(image="production-dashboard/image/streamlit-logo-primary-colormark-lighttext.png", 
+        icon_image="production-dashboard/image/streamlit-mark-color.png")
 
 with st.sidebar:
     st.title('Production Dashboard')
